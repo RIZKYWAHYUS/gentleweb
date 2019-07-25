@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../logo.svg';
 
 import {
   Container, Row, Col, Form, Input, Button, Navbar, Nav,
@@ -7,7 +6,8 @@ import {
   DropdownToggle, DropdownMenu, DropdownItem
 } from 'reactstrap';
 
-const AVATAR = 'https://www.gravatar.com/avatar/429e504af19fc3e1cfa5c4326ef3394c?s=240&d=mm&r=pg';
+
+const logoTop = 'https://upload.wikimedia.org/wikipedia/commons/b/be/Lineage_OS_Logo.png';
 
 const Header = () => (
   <header>
@@ -18,18 +18,12 @@ const Header = () => (
         
           <Col className="d-none d-lg-flex justify-content-start">
             <Nav className="mrx-auto" navbar>
-            
+                          
               <NavItem className="d-flex align-items-center">
-                <NavLink className="font-weight-bold" href="/">
-                  <img src={AVATAR} alt="avatar" className="img-fluid rounded-circle" style={{ width: 36 }} />
-                </NavLink>
+                <NavLink className="font-weight-bold" href="/">Gentleweb</NavLink>
               </NavItem>
               
-              <NavItem className="d-flex align-items-center">
-                <NavLink className="font-weight-bold" href="/">Home</NavLink>
-              </NavItem>
-              
-              <NavItem className="d-flex align-items-center">
+              {/* <NavItem className="d-flex align-items-center">
                 <NavLink className="font-weight-bold" href="/">Events</NavLink>
               </NavItem>
               
@@ -42,21 +36,21 @@ const Header = () => (
                   <DropdownItem>Tutorials</DropdownItem>
                   <DropdownItem>Courses</DropdownItem>
                 </DropdownMenu>
-              </UncontrolledDropdown>
+              </UncontrolledDropdown> */}
               
             </Nav>
           </Col>
           
           <Col className="d-flex justify-content-xs-start justify-content-lg-center">
             <NavbarBrand className="d-inline-block p-0" href="/" style={{ width: 80 }}>
-              <img src={logo} alt="logo" className="position-relative img-fluid" />
+              <img src={logoTop} alt="logo" className="position-relative img-fluid" />
             </NavbarBrand>
           </Col>
           
           <Col className="d-none d-lg-flex justify-content-end">
             <Form inline>
-              <Input type="search" className="mr-3" placeholder="Search React Courses" />
-              <Button type="submit" color="info" outline>Search</Button>
+              <Input type="search" className="mr-3" placeholder="Cari Baju" />
+              <Button type="submit" color="info" outline>Cari</Button>
             </Form>
           </Col>
           

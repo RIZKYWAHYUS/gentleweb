@@ -46,7 +46,7 @@ render() {
                 {/* <UncontrolledAlert color="danger" className="d-none d-lg-block">
                 <strong>Account not activated.</strong>
                 </UncontrolledAlert> */}
-                
+                <div style={{ marginTop : '35px' }} ></div>
                 <Card style={{ position : valuePosition , width : valueWidth, top : valueTop }} >
                 <CardImg top width="10px" src={BANNER} alt="banner" />
                 <CardBody>
