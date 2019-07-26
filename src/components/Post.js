@@ -7,14 +7,22 @@ const imageLove = {
   unlike : "https://salestock-public-prod.freetls.fastly.net/balok-assets/assets/img/icons/icon-heart-grey-0a895ac5bdf1f98aa48d5f85efc7679d.png",
   like : "https://salestock-public-prod.freetls.fastly.net/balok-assets/assets/img/icons/icon-heart-berry-2ef24dd865381c62a8ff8df784d9615c.png"
 }
-    
+ 
+
+
 class Post extends Component {
 
   state = { post: null,  theposition: window.pageYOffset }
-s
+
+  
   componentDidMount() {
     axios.get('https://reqres.in/api/users')
       .then(response => this.setState({ post: response.data }));
+
+    // axios.post('https://api.moltin.com/oauth/access_token')
+    //  .data("client_id=XXXX , grant_type=implicit")
+    //  .then(response => console.log(response))
+
   }
 
    
