@@ -32,7 +32,7 @@ class Post extends Component {
     datas = datas.data;
     return Object.entries(datas).map(([key, value], i) => {
         return (
-            <Card key={key}>
+            <Card key={key} onClick={this.chooseClick}>
               <CardImg top width="100%" src={value.avatar} alt="banner" />
               <CardBody>
                 <CardTitle className="h3 mb-2 pt-2 font-weight-bold text-secondary">{ value.first_name }</CardTitle>
@@ -47,6 +47,11 @@ class Post extends Component {
         )
     })
 }
+
+ chooseClick(e){
+   e.preventDefault();
+   console.log(e.currentTarget);
+ }
 
  loveClick(e){
    e.preventDefault();
